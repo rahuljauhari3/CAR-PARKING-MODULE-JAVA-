@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    font-family:'Noto Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#bgimg{
+    background-image: url("CityCar.png");
+    background-attachment: fixed;
+}
+.imgmod{
+    opacity: 0.6;
+    position: absolute;
+    width: 10%;
+    padding: 1em;
+}
+#imgzero{
+    top: 20%;
+    right: 2%;
+}
+#imgone{
+    top: 20%;
+}
+#imgtwo{
+    top: 40%;
+}
+#imgthree{
+    top: 60%;
+}
+.form-container{
+    opacity: 0.9;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    color: white;
+    padding: 2em;
+    width: 60%;
+    background: linear-gradient(black, gray);
+    border-radius: 25px;
+    box-shadow: -6px 6px 12px #b4b4b4, 6px -6px 12px 
+}
+input{
+    color:blue;
+}
+header{
+    opacity: 0.9;
+    background-attachment: fixed;
+    margin-bottom: 1em;
+    font-size: larger;
+    background-color: black;
+    padding: 1em;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    box-shadow: -6px 6px 12px #b4b4b4, 6px -6px 12px 
+}
+#header-logo{
+    width:64px;
+    height:64px;
+}
+#header-msg{
+    font-size: 25px;
+    color: white;
+}
+#btnOne{
+    background-color: skyblue;
+    color:black;
+}
+#btnOne:focus,#btnOne:hover{
+    box-shadow: none;
+    outline:none;
+}
+
+#tableHead{
+    background-color: black;
+}
+#searchInput{
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border-bottom: 1px solid #ced4da;
+}
+#searchInput:hover,#searchInput:focus{
+    box-shadow: none;
+    outline:none;
+}

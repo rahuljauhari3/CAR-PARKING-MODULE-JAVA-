@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="71796864069-d4flicdmh09r1jojnsr7ra772dglv4ps.apps.googleusercontent.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="Cars.png">
+    <div class="container">
+        <form method="post" action="./Insert.jsp">
+            <div class="text">SignUp</div>
+            <div class="field"> <i class="fa fa-envelope-o"></i> <input type="text" name="user" placeholder="Username">
+            </div>
+            <div class="field"> <i class="fa fa-key"></i> <input type="password" name="pass" placeholder="Password">
+            </div>
+            <span class="field half"> <input type="text" name="name" placeholder="Name"></span>
+            <span class="field half"> <input type="text" name="lastname" placeholder="Last Name"></span>
+            <span class="field half"> <input type="number" name="mobile" placeholder="Mobile No"></span>
+            <span class="field half"> <input type="email" name="email" placeholder="Email"></span>
+            <span class="field half"> <input type="text" name="LicensePlate" placeholder="LicensePlate"></span>
+            <button class="login_btn">Register</button>
+            <div class="g-signin2" data-onsuccess="onSignIn">
+                <script>function onSignIn(googleUser) {
+                        var profile = googleUser.getBasicProfile();
+                        str1=BasicProfile.getName("name"); // Do not send to your backend! Use an ID token instead.
+                        str2=BasicProfile.getFamilyName("lastname");
+                        str3=BasicProfile.getEmail("email"); // This is null if the 'email' scope is not present.
+                    }
+                </script>
+            </div>
+
+            
+        </form>
+    </div>
+</body>
+
+</html>
